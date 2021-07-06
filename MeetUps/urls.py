@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('MeetUps/', views.index, name='all-meetups'), #our-domain.com/MeetUps
-    path('MeetUps/<meetup_slug>', views.meetup_detials, name='meetup-detail'), #our-domain.com/meetups/<dynamic-path-segment> 
+    path('MeetUps/<str:meetup_slug>', views.meetup_detials, name='meetup-detail'), #our-domain.com/meetups/<dynamic-path-segment> 
 
 ]
